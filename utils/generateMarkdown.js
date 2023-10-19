@@ -26,7 +26,6 @@ function generateMarkdown(data) {
   //* create layout of what you markdown readme with template literals
   //* hint - call renderlicense functions inside this function
   return `# ${data.title}
-  [visit ${username} @ github](https://github.com/AZurek17)
 
   ## Description
 
