@@ -1,4 +1,3 @@
-
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
@@ -6,8 +5,7 @@ const generateMarkdown = require("./utils/generateMarkdown")
 
 // TODO: Create an array of questions for user input
 const questions = [
-    inquirer
-    .prompt ([
+    
         {
             type: "input",
             message: "Project title",
@@ -42,16 +40,18 @@ const questions = [
             type: "list",
             message: "Project license",
             name: "license",
+            choices: [
+                "MIT License",
+                "Apache License 2.0",
+                "GNU General Public License",
+                "the Unlicense"
+            ],
         },
         {
             type: "input",
             message: "GitHib Username",
             name: "username",
         },
-    ])
-    .then((response) => {
-     console.log(response)
-    })
     
 ];
 //* add type, name, and message for each question
@@ -63,7 +63,13 @@ function writeToFile(fileName, data) {
 }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer
+    .prompt (questions)
+    .then((response) => {
+     console.log(response)
+    })
+}
 
 // Function call to initialize app
 init();
