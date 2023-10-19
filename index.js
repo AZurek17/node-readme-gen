@@ -7,11 +7,52 @@ const generateMarkdown = require("./utils/generateMarkdown")
 // TODO: Create an array of questions for user input
 const questions = [
     inquirer
-    .createPromptModule([
+    .prompt ([
         {
-            type
-        }
+            type: "input",
+            message: "Project title",
+            name: "title",
+        },
+        {
+            type: "input",
+            message: "Project description",
+            name: "description",
+        },
+        {
+            type: "input",
+            message: "Project installation",
+            name: "installation",
+        },
+        {
+            type: "input",
+            message: "Project usage",
+            name: "usage",
+        },
+        {
+            type: "input",
+            message: "Project contributing",
+            name: "contributing",
+        },
+        {
+            type: "input",
+            message: "Project tests",
+            name: "tests",
+        },
+        {
+            type: "list",
+            message: "Project license",
+            name: "license",
+        },
+        {
+            type: "input",
+            message: "GitHib Username",
+            name: "username",
+        },
     ])
+    .then((response) => {
+     console.log(response)
+    })
+    
 ];
 //* add type, name, and message for each question
 //* add questions:  added readme sections (description, usage, license, etc)
