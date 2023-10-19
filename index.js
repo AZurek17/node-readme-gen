@@ -43,7 +43,7 @@ const questions = [
             choices: [
                 "MIT License",
                 "Apache License 2.0",
-                "GNU General Public License",
+                "Mozilla Public License ",
                 "the Unlicense"
             ],
         },
@@ -59,7 +59,9 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-//* use FS module to write data and fileName to readme file    
+//* use FS module to write data and fileName to readme file 
+fs.writeFile('README.md', generateMarkdown, (error) =>
+err ? console.error(err) : console.log('Generated README.md'))   
 }
 
 // TODO: Create a function to initialize app
@@ -68,6 +70,7 @@ function init() {
     .prompt (questions)
     .then((response) => {
      console.log(response)
+     writeToFile()
     })
 
 }
