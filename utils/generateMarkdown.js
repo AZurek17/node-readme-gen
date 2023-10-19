@@ -23,7 +23,50 @@ function generateMarkdown(data) {
   //* create layout of what you markdown readme with template literals
   //* hint - call renderlicense functions inside this function
   return `# ${data.title}
+  [visit ${username} @ github](https://github.com/AZurek17)
 
+  ## Description
+
+  ${data.description}
+
+  ## Table of Contents
+
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Credits](#credit)
+  * [License](#license)
+  * [Badges](#badges)
+  * [contributing](#contributing)
+  * [Tests](#tests)
+
+  ##Installation
+
+  ${data.installation}
+
+  ##Usage
+
+  ${data.usage}
+
+  ##credits
+
+  Tutoring Session: Sam Pai
+  StudtGroup
+  
+  ##License
+
+  ${renderLicenseSection}
+
+  ##Badges
+
+  ##Contributing
+
+  ${data.contributing}
+
+  ##Tests
+
+  ${data.tests}
+
+  &copy 2023; Written by Andy Zurek
 `;
 }
 

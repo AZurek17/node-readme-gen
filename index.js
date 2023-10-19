@@ -69,11 +69,12 @@ function init() {
     .then((response) => {
      console.log(response)
     })
+
 }
 
 // Function call to initialize app
 init();
 
 //* use inquiter to display questios to user
-//* call generateMarkdown funcoin on the data collected
+//* call generateMarkdown function on the data collected
 //* take what is returned to us, then pass it to the writeToFile funciton
