@@ -2,7 +2,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
-const { log } = require("console");
+// const { log } = require("console");
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -44,7 +44,8 @@ const questions = [
                 "MIT License",
                 "Apache License 2.0",
                 "Mozilla Public License ",
-                "the Unlicense"
+                "the Unlicense",
+                "none"
             ],
         },
         {
@@ -71,8 +72,7 @@ function init() {
       .prompt (questions)
       .then((response) => {
       console.log(response)
-      const responseData = (response);
-      writeToFile("readme.md", generateMarkdown(responseData));
+      writeToFile("readme.md", generateMarkdown(response));
      
     })
 
