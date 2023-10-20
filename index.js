@@ -30,13 +30,13 @@ const questions = [
             type: "input",
             message: "Project contributing",
             name: "contributing",
-            default: "contact me if you intersted in contributing"
+            default: "Contact me if your intersted in contributing"
         },
         {
             type: "input",
             message: "Project tests",
             name: "tests",
-            default: "To be added in the near future"
+            default: "Section to be added in the near future"
         },
         {
             type: "list",
