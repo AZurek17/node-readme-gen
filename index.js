@@ -61,7 +61,7 @@ const questions = [
 function writeToFile(fileName, data) {
 //* use FS module to write data and fileName to readme file
 
-fs.writeFile(fileName, JSON.stringify(data), (err) =>
+fs.writeFile(fileName, data, (err) =>
 err ? console.log(err) : console.log('Generated README.md'))  
 }
 
@@ -71,8 +71,8 @@ function init() {
       .prompt (questions)
       .then((response) => {
       console.log(response)
-
-      writeToFile("readme.md", generateMarkdown(response));
+      const responseData = (response);
+      writeToFile("readme.md", generateMarkdown(responseData));
      
     })
 
