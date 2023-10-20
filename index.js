@@ -41,10 +41,10 @@ const questions = [
             message: "Project license",
             name: "license",
             choices: [
-                "MIT License",
-                "Apache License 2.0",
-                "Mozilla Public License ",
-                "the Unlicense",
+                "mit",
+                "intel",
+                "jam",
+                "unlicense",
                 "none"
             ],
         },
@@ -52,6 +52,11 @@ const questions = [
             type: "input",
             message: "GitHib Username",
             name: "username",
+        },
+        {
+            type: "input",
+            message: "Email",
+            name: "email",
         },
     
 ];
