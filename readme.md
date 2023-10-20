@@ -1,6 +1,6 @@
 # Node-README-Generator ![github license](https://img.shields.io/badge/License-intel-blue)
 
-  [Link to Walkthrough Video](https://watch.screencastify.com/v/CcbATMjOrKbLfM9117nw)
+  [Link to Walkthrough Video](https://watch.screencastify.com/v/JmFmh8sQQOOvlu2DUJvh)
 
   ## Description 
 
