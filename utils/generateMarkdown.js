@@ -35,6 +35,8 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.title} ${renderLicenseBadge(data.license)}
 
+  [Link to Walkthrough Video](https://watch.screencastify.com/v/JmFmh8sQQOOvlu2DUJvh)
+
   ## Description
 
   ${data.description}
