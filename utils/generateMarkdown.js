@@ -12,7 +12,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
 if (license !== "none" ){
-  return `[${license} license](https://opensource.org/license/${license})`
+  return `[Website to ${license} license](https://opensource.org/license/${license})`
 }
 return ""
 }
@@ -85,7 +85,7 @@ function generateMarkdown(data) {
   ## Questions
 
   Contact me on [github](https://github.com/${data.username})
-  or further questions, [email me](mailto:${data.email})
+  if you have further questions, [email me](mailto:${data.email})
 
   &copy 2023; Written by Andy Zurek
 `;

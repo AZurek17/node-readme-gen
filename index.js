@@ -30,11 +30,13 @@ const questions = [
             type: "input",
             message: "Project contributing",
             name: "contributing",
+            default: "contact me if you intersted in contributing"
         },
         {
             type: "input",
             message: "Project tests",
             name: "tests",
+            default: "To be added in the near future"
         },
         {
             type: "list",
@@ -52,11 +54,13 @@ const questions = [
             type: "input",
             message: "GitHib Username",
             name: "username",
+            default: "AZurek17"
         },
         {
             type: "input",
             message: "Email",
             name: "email",
+            default: "andyzurek@gmail.com"
         },
     
 ];
