@@ -60,6 +60,8 @@ function generateMarkdown(data) {
 
   ## credits
 
+  [Starter code](https://github.com/coding-boot-camp/potential-enigma)
+
   Tutoring Session: Sam Pai
 
   Study Group
